@@ -1,0 +1,5 @@
+# Cloudflare Pages SPA fallback (Week 11.2).
+# Vue Router runs in history mode, so a direct hit on /WeatherCheck asks the
+# static host for a file that does not exist and returns 404. This rewrites any
+# unmatched path to index.html with a 200 so the router can resolve the route.
+/*    /index.html   200
